@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Reportage Associatif | Tagada Studio (93) Île-de-France</title>
+  <meta name="description" content="Photographe professionnel spécialisé dans le reportage associatif à Neuilly-sur-Marne et Île-de-France. Photos de galas, ateliers et communication associative." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Tagada Studio" />
+  <link rel="canonical" href="https://tagadastudio.fr/association.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tagadastudio.fr/association.html" />
+  <meta property="og:title" content="Reportage Associatif | Tagada Studio Île-de-France" />
+  <meta property="og:description" content="Valorisez vos projets collectifs. Reportages d'ateliers, spectacles et galas de fin d'année avec un regard humain et des tarifs solidaires." />
+  <meta property="og:image" content="https://tagadastudio.fr/Images/photo_association.png" />
+
+  <!-- Google Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#1A4D2E',
+              light: '#256D41',
+              dark: '#0F2F1B',
+              soft: '#E8F3EC',
+            },
+            stone: {
+              DEFAULT: '#FDFBF7',
+              dark: '#F3EFE9',
+              slate: '#E9E4DC',
+            },
+            ink: '#0C110D',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #FDFBF7;
+      color: #0C110D;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary svg { transform: rotate(180deg); }
+    details summary svg { transition: transform 0.3s ease; }
+
+    /* Scrolled dynamic styles for color contrast */
+    #header-nav.scrolled #nav-links a {
+      color: rgba(12, 17, 13, 0.8) !important;
+    }
+    #header-nav.scrolled #nav-links a:hover {
+      color: #1A4D2E !important;
+    }
+    #header-nav.scrolled #nav-links a.active-link {
+      color: #1A4D2E !important;
+      border-color: rgba(26, 77, 46, 0.6) !important;
+    }
+  </style>
+</head>
+<body class="bg-stone text-ink antialiased selection:bg-forest selection:text-white">
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" id="header-nav">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between" aria-label="Navigation principale">
+      
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="Tagada Studio - Accueil">
+        <img id="nav-logo-img" src="Images/Logo-tagada-studio-fond-transparent2-800 2 - Petite.png" alt="Tagada Studio" class="h-10 sm:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105" />
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <ul class="hidden md:flex items-center gap-8 list-none text-sm font-medium text-white/90" id="nav-links" role="list">
+        <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
+        <li><a href="scolaire.html" class="hover:text-white transition-colors">Photos Scolaires</a></li>
+        <li><a href="sport.html" class="hover:text-white transition-colors">Clubs Sportifs</a></li>
+        <li><a href="association.html" class="text-white border-b-2 border-white/60 pb-1 font-bold active-link">Associations</a></li>
+        <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="flex items-center gap-3">
+        <a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all border border-white/20 bg-white/10 hover:bg-white hover:text-forest hover:border-white text-white" id="nav-cta-btn">
+          Contact & Devis
+        </a>
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-xl text-white" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-forest-dark py-6 px-4 shadow-xl z-40">
+      <ul class="flex flex-col gap-4 list-none text-base font-semibold text-white/90" role="list">
+        <li><a href="index.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Accueil</a></li>
+        <li><a href="scolaire.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Photos Scolaires</a></li>
+        <li><a href="sport.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Clubs Sportifs</a></li>
+        <li><a href="association.html" class="block py-2 px-3 rounded-lg bg-white/10 text-white">Associations</a></li>
+        <li><a href="index.html#contact" class="block py-2 px-3 rounded-lg hover:bg-white/5">Devis & Tarifs</a></li>
+        <li><a href="index.html#contact" class="block mt-4 text-center bg-white text-forest py-3 rounded-full font-bold">Contact & Devis</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- ===================== HERO SILO ASSOCIATION ===================== -->
+    <section class="relative min-h-[60svh] flex flex-col justify-center bg-gradient-to-b from-forest-dark to-forest text-white pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden" aria-labelledby="silo-association-heading">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/[0.03] via-transparent to-transparent pointer-events-none" aria-hidden="true"></div>
+      
+      <div class="relative max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- TEXTUAL COLUMN -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-stone-dark text-xs sm:text-sm font-semibold tracking-wide shadow-inner">
+            🎭 Valoriser l'humain et l'engagement collectif local
+          </div>
+          
+          <h1 id="silo-association-heading" class="font-display text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight">
+            Reportage associatif<br/>
+            <span class="text-stone-dark italic font-normal">Mémoire & Émotion du 93</span>
+          </h1>
+          
+          <p class="text-base sm:text-lg text-white/85 leading-relaxed max-w-2xl font-light">
+            Mettez en lumière l'action de vos bénévoles, capturez l'authenticité de vos ateliers et sublimez vos grands événements artistiques ou culturels. Nous offrons aux structures associatives des reportages professionnels, vivants et porteurs de sens, à des tarifs solidaires et maîtrisés.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="#services-detail" class="px-8 py-3.5 rounded-full text-base font-bold bg-white text-forest hover:bg-stone-dark hover:-translate-y-0.5 active:translate-y-0 shadow-lg transition-all text-center">
+              Nos spécialités associatives
+            </a>
+            <a href="index.html#contact" class="px-8 py-3.5 rounded-full text-base font-bold border border-white/30 text-white bg-transparent hover:bg-white/10 hover:-translate-y-0.5 active:translate-y-0 transition-all text-center">
+              Demander un devis solidaire
+            </a>
+          </div>
+        </div>
+
+        <!-- IMAGE COLUMN (Custom asset!) -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="absolute w-72 h-72 rounded-full bg-forest-light/20 blur-[50px] pointer-events-none" aria-hidden="true"></div>
+          <div class="relative w-full max-w-sm rounded-[36px] overflow-hidden border-4 border-white/10 shadow-2xl aspect-square">
+            <img src="Images/photo_association.png" alt="People laughing and applauding during theater community workshop, by Tagada Studio" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SERVICE LIST ===================== -->
+    <section id="services-detail" class="py-20 sm:py-28 bg-stone relative" aria-labelledby="services-heading">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- SECTION TITLE -->
+        <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+          <span class="text-forest font-bold tracking-widest text-xs uppercase bg-forest/10 px-4 py-1.5 rounded-full inline-block mb-4">Notre Palette d'Intervention</span>
+          <h2 id="services-heading" class="font-display text-3xl sm:text-4xl font-extrabold text-ink mb-4">Raconter l'histoire de votre communauté</h2>
+          <p class="text-gray-600">Des photos professionnelles pour valoriser vos dossiers de subvention, votre site web et vos rapports d'activité.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Column 1 -->
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-forest-soft text-forest flex items-center justify-center font-bold text-lg mb-6">
+                🎭
+              </div>
+              <h3 class="font-display font-bold text-xl text-ink mb-4">Spectacles, Théâtre & Galas</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">
+                Prises de vue lors des représentations théâtrales, concerts, chorales ou galas de danse. Nous maîtrisons la gestion technique des éclairages scéniques complexes et changeants pour restituer fidèlement l'émotion du spectacle, sans flash perturbateur.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal" style="transition-delay: 150ms;">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-forest-soft text-forest flex items-center justify-center font-bold text-lg mb-6">
+                🎨
+              </div>
+              <h3 class="font-display font-bold text-xl text-ink mb-4">Ateliers, Cours & Répétitions</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">
+                Reportage au cœur de vos activités quotidiennes : ateliers artistiques, cours collectifs, réunions ou répétitions. Nous capturons sur le vif les sourires, le partage intergénérationnel et l'authenticité de l'engagement humain.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal" style="transition-delay: 300ms;">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-forest-soft text-forest flex items-center justify-center font-bold text-lg mb-6">
+                🕊️
+              </div>
+              <h3 class="font-display font-bold text-xl text-ink mb-4">Portraits Bénévoles & Bilan</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">
+                Mise en valeur de ceux qui font battre le cœur de l'association. Nous réalisons des portraits individuels ou collectifs valorisants des membres du bureau et des bénévoles actifs pour vos trombinoscopes ou votre communication interne.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ENGAGEMENT SOLIDAIRE DETAILS ===================== -->
+    <section class="py-20 sm:py-28 bg-stone-dark/35" aria-labelledby="solidaire-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          
+          <!-- TEXT AREA -->
+          <div class="space-y-8 reveal">
+            <div>
+              <span class="text-forest font-bold tracking-widest text-xs uppercase bg-forest/10 px-4 py-1.5 rounded-full inline-block mb-4">Charte Éthique & Sociale</span>
+              <h2 id="solidaire-heading" class="font-display text-3xl sm:text-5xl font-black text-ink mb-6">Des tarifs étudiés et solidaires pour le monde associatif</h2>
+              <p class="text-gray-600 leading-relaxed">
+                Chez Tagada Studio, nous sommes profondément convaincus que le budget d'une structure locale ne doit pas être un frein à une communication visuelle de niveau professionnel.
+              </p>
+              <p class="text-gray-600 leading-relaxed mt-4">
+                Nous proposons une **grille tarifaire solidaire adaptée** aux associations déclarées Loi 1901. Pour les galas et événements de fin d'année scolaires ou culturels, nous pouvons également mettre en place une billetterie photo en ligne où les familles achètent leurs tirages ou fichiers numériques individuellement, annulant ainsi tout coût fixe direct pour la trésorerie de votre association.
+              </p>
+            </div>
+
+            <!-- Focus feature -->
+            <div class="flex gap-4 items-start bg-forest-soft rounded-2xl p-5 border border-forest/10">
+              <div class="w-10 h-10 rounded-xl bg-forest text-white flex items-center justify-center flex-shrink-0 font-bold shadow-md">
+                ✓
+              </div>
+              <div>
+                <h4 class="font-bold text-forest mb-1">Cession des droits de diffusion incluse</h4>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                  Pas de frais cachés. Nos reportages incluent par défaut la cession de droits d'utilisation pour l'ensemble de vos canaux de diffusion non-commerciaux (site internet, réseaux sociaux, bulletins municipaux, rapports d'activité d'intérêt général).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BENEFIT LIST CARD -->
+          <div class="bg-white rounded-3xl p-8 sm:p-12 border border-gray-100 shadow-xl space-y-6 relative reveal" style="transition-delay: 150ms;">
+            <div class="absolute w-40 h-40 rounded-full bg-forest-soft blur-[40px] -bottom-20 -right-20 pointer-events-none" aria-hidden="true"></div>
+            
+            <h3 class="font-display font-extrabold text-2xl text-forest mb-4">Nos engagements pour votre association :</h3>
+            
+            <ul class="space-y-4 list-none text-sm sm:text-base text-gray-600">
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-forest"></span>
+                <strong>Photographes discrets & professionnels</strong> (respect du public)
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-forest"></span>
+                <strong>Matériel adapté aux basses lumières</strong> (salles de spectacle, gymnases)
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-forest"></span>
+                <strong>Traitement d'image soigné</strong> et rapide sous 7 à 10 jours
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-forest"></span>
+                <strong>Mise à disposition d'une galerie de téléchargement HD</strong>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-forest"></span>
+                <strong>Possibilité de commande en ligne pour les familles</strong> (spectacles)
+              </li>
+            </ul>
+
+            <div class="pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center gap-4">
+              <div class="text-center sm:text-left">
+                <p class="text-ink font-bold text-sm">Besoin d'un devis pour votre AG ou gala ?</p>
+                <p class="text-xs text-gray-600">Nous étudions gratuitement votre cahier des charges sous 24h.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ACCORDION SPECIFIC ===================== -->
+    <section class="py-20 sm:py-28 bg-stone relative" aria-labelledby="faq-association-heading">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- TITLE -->
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <span class="text-forest font-bold tracking-widest text-xs uppercase bg-forest/10 px-4 py-1.5 rounded-full inline-block mb-4">FAQ Associations</span>
+          <h2 id="faq-association-heading" class="font-display text-3xl sm:text-4xl font-extrabold text-ink mb-4">Questions fréquentes des associations</h2>
+          <p class="text-gray-600">Tout ce que se demandent les coordinateurs, bénévoles et spectateurs.</p>
+        </div>
+
+        <!-- ACCORDIONS -->
+        <div class="space-y-4 reveal">
+          
+          <details class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-5 font-bold text-ink cursor-pointer hover:text-forest transition-colors focus:outline-none select-none">
+              <span class="pr-8 text-sm sm:text-base">Comment gérez-vous le droit à l'image des participants lors d'événements publics ?</span>
+              <span class="w-8 h-8 rounded-full bg-forest-soft flex items-center justify-center text-forest flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4">
+              Pour les événements et ateliers fermés, l'association doit recueillir au préalable les **autorisations de droit à l'image** (notamment pour les mineurs). Lors d'événements publics plus larges, nous appliquons une charte de discrétion stricte : nous favorisons les prises de vue d'ambiance ou de profil et retirons immédiatement tout cliché sur simple demande d'une personne concernée.
+            </div>
+          </details>
+
+          <details class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-5 font-bold text-ink cursor-pointer hover:text-forest transition-colors focus:outline-none select-none">
+              <span class="pr-8 text-sm sm:text-base">Vos photographes perturbent-ils le déroulement des pièces de théâtre ou galas ?</span>
+              <span class="w-8 h-8 rounded-full bg-forest-soft flex items-center justify-center text-forest flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4">
+              Absolument pas ! Nous utilisons des boîtiers hybrides professionnels dotés de **déclencheurs électroniques 100% silencieux** et des objectifs de type téléobjectifs. Nous nous déplaçons discrètement sur les côtés ou au fond de la salle et n'utilisons jamais de flash en cours de représentation, garantissant le respect du jeu des comédiens et la concentration du public spectateur.
+            </div>
+          </details>
+
+          <details class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-5 font-bold text-ink cursor-pointer hover:text-forest transition-colors focus:outline-none select-none">
+              <span class="pr-8 text-sm sm:text-base">Combien de temps à l'avance faut-il réserver pour un gala annuel ?</span>
+              <span class="w-8 h-8 rounded-full bg-forest-soft flex items-center justify-center text-forest flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4">
+              Les galas et spectacles de fin d'année se concentrent majoritairement sur les mois de **mai, juin et décembre**. Pour sécuriser un photographe lors de ces périodes de forte affluence, nous vous conseillons vivement de nous contacter **3 à 4 mois avant l'événement**.
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACTION BANNER ===================== -->
+    <section class="py-20 bg-gradient-to-br from-forest-dark via-forest to-forest-dark text-white text-center relative overflow-hidden" aria-labelledby="banner-heading">
+      <div class="absolute inset-0 bg-white/[0.02] pointer-events-none" aria-hidden="true"></div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <h2 id="banner-heading" class="font-display text-3xl sm:text-5xl font-bold mb-4">Mettez en lumière vos initiatives collectives</h2>
+        <p class="text-white/70 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          Contactez-nous pour échanger sur vos projets, vos contraintes budgétaires et réserver un reportage adapté et sur-mesure.
+        </p>
+        <a href="index.html#contact" class="px-8 py-4 rounded-full text-base font-bold bg-white text-forest hover:bg-stone-dark hover:-translate-y-0.5 active:translate-y-0 shadow-lg inline-flex items-center gap-2">
+          Demander une étude & un Devis gratuit
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-forest-dark text-white border-t border-white/5 pt-16 pb-8" aria-label="Pied de page">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 gap-y-12 mb-16">
+        
+        <!-- COLUMN 1: BRAND -->
+        <div class="col-span-2 md:col-span-1 space-y-4">
+          <img src="Images/Logo-tagada-studio-fond-transparent2-800 2 - Petite.png" alt="Tagada Studio" class="h-8 sm:h-9 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
+          <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+            Spécialiste de la photographie scolaire, sportive et associative en Seine-Saint-Denis (93) et Île-de-France. Fiers d'un artisanat moderne et engagé.
+          </p>
+        </div>
+
+        <!-- COLUMN 2: SILOS -->
+        <nav aria-label="Silos Navigation Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Nos Expertises</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="scolaire.html" class="hover:text-white transition-colors">Photographie Scolaire</a></li>
+            <li><a href="sport.html" class="hover:text-white transition-colors">Photo Club Sport</a></li>
+            <li><a href="association.html" class="hover:text-white text-white font-bold transition-colors">Reportage Associatif</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
+          </ul>
+        </nav>
+
+        <!-- COLUMN 3: DIRECT LINKS -->
+        <nav aria-label="Liens Utiles Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Tagada Studio</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="index.html#processus" class="hover:text-white transition-colors">Notre Méthode</a></li>
+            <li><a href="index.html#temoignages" class="hover:text-white transition-colors">Témoignages</a></li>
+            <li><a href="index.html#faq" class="hover:text-white transition-colors">Questions Fréquentes</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition-colors">Devis Gratuit</a></li>
+          </ul>
+        </nav>
+
+        <!-- COLUMN 4: REGULATORY -->
+        <nav aria-label="Légal Navigation Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Législation & SEO</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="mentions-legales.html" class="hover:text-white transition-colors">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html" class="hover:text-white transition-colors">Politique de Confidentialité</a></li>
+            <li><a href="cgv.html" class="hover:text-white transition-colors">CGV</a></li>
+            <li><a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap XML</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
+        <p>© 2026 Tagada Studio. Tous droits réservés. SIRET : 984 595 538 00013 · Neuilly-sur-Marne (93330).</p>
+        <p class="text-center md:text-right">
+          Ciblage Local : <a href="scolaire.html" class="hover:text-white/70 underline transition-colors">Photographie scolaire Neuilly-sur-Marne</a> · <a href="sport.html" class="hover:text-white/70 underline transition-colors">Photo club sport</a> · <a href="association.html" class="hover:text-white/70 underline transition-colors">Reportage associatif Île-de-France</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Header Glassmorphism effect
+    const header = document.getElementById('header-nav');
+    const navLogoImg = document.getElementById('nav-logo-img');
+    const navLogoText = document.getElementById('nav-logo-text');
+    const navLogoSub = document.getElementById('nav-logo-sub');
+    const navLinks = document.getElementById('nav-links');
+    const navCtaBtn = document.getElementById('nav-cta-btn');
+
+    function checkHeaderScroll() {
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled', 'bg-stone/95', 'backdrop-blur-md', 'shadow-md', 'py-3');
+        header.classList.remove('py-4', 'sm:py-5');
+        
+        if (navLogoImg) navLogoImg.src = 'Images/Logo.png';
+        if (navLogoText) navLogoText.style.color = '#1A4D2E';
+        if (navLogoSub) navLogoSub.style.color = '#0C110D';
+        if (navLinks) {
+          navLinks.classList.remove('text-white/90');
+          navLinks.classList.add('text-ink/80');
+        }
+        if (navCtaBtn) {
+          navCtaBtn.classList.remove('text-white', 'border-white/20', 'bg-white/10', 'hover:bg-white', 'hover:text-forest', 'hover:border-white');
+          navCtaBtn.classList.add('text-forest', 'border-forest/20', 'bg-forest/5', 'hover:bg-forest', 'hover:text-white', 'hover:border-forest');
+        }
+        if (mobileMenuToggle) {
+          mobileMenuToggle.classList.remove('text-white', 'hover:bg-white/10');
+          mobileMenuToggle.classList.add('text-forest', 'hover:bg-forest/10');
+        }
+      } else {
+        header.classList.remove('scrolled', 'bg-stone/95', 'backdrop-blur-md', 'shadow-md', 'py-3');
+        header.classList.add('py-4', 'sm:py-5');
+
+        if (navLogoImg) navLogoImg.src = 'Images/Logo-tagada-studio-fond-transparent2-800 2 - Petite.png';
+        if (navLogoText) navLogoText.style.color = '';
+        if (navLogoSub) navLogoSub.style.color = '';
+        if (navLinks) {
+          navLinks.classList.add('text-white/90');
+          navLinks.classList.remove('text-ink/80');
+        }
+        if (navCtaBtn) {
+          navCtaBtn.classList.add('text-white', 'border-white/20', 'bg-white/10', 'hover:bg-white', 'hover:text-forest', 'hover:border-white');
+          navCtaBtn.classList.remove('text-forest', 'border-forest/20', 'bg-forest/5', 'hover:bg-forest', 'hover:text-white', 'hover:border-forest');
+        }
+        if (mobileMenuToggle) {
+          mobileMenuToggle.classList.remove('text-forest', 'hover:bg-forest/10');
+          mobileMenuToggle.classList.add('text-white', 'hover:bg-white/10');
+        }
+      }
+    }
+    window.addEventListener('scroll', checkHeaderScroll, { passive: true });
+    checkHeaderScroll();
+
+    // Mobile Menu Toggle
+    const menuToggleBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuToggleBtn.addEventListener('click', () => {
+      const isExpanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
+      menuToggleBtn.setAttribute('aria-expanded', !isExpanded);
+      
+      mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Scroll Reveal Effects
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>

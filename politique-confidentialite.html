@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de Confidentialité | Tagada Studio</title>
+  <meta name="description" content="Politique de protection des données et de confidentialité de Tagada Studio. Découvrez comment nous sécurisons les photos et données scolaires et associatives." />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#1A4D2E',
+              light: '#256D41',
+              dark: '#0F2F1B',
+              soft: '#E8F3EC',
+            },
+            stone: {
+              DEFAULT: '#FDFBF7',
+              dark: '#F3EFE9',
+              slate: '#E9E4DC',
+            },
+            ink: '#0C110D',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #FDFBF7;
+      color: #0C110D;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* Scrolled dynamic styles for color contrast */
+    #header-nav.scrolled #nav-links a {
+      color: rgba(12, 17, 13, 0.8) !important;
+    }
+    #header-nav.scrolled #nav-links a:hover {
+      color: #1A4D2E !important;
+    }
+    #header-nav.scrolled #nav-links a.active-link {
+      color: #1A4D2E !important;
+      border-color: rgba(26, 77, 46, 0.6) !important;
+    }
+  </style>
+</head>
+<body class="bg-stone text-ink antialiased selection:bg-forest selection:text-white">
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-stone/95 backdrop-blur-md shadow-md py-4 sm:py-5 scrolled" id="header-nav">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between" aria-label="Navigation principale">
+      
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="Tagada Studio - Accueil">
+        <img id="nav-logo-img" src="Images/Logo.png" alt="Tagada Studio" class="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105 duration-300" />
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <ul class="hidden md:flex items-center gap-8 list-none text-sm font-medium text-ink/80" id="nav-links" role="list">
+        <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
+        <li><a href="scolaire.html" class="hover:text-white transition-colors">Photos Scolaires</a></li>
+        <li><a href="sport.html" class="hover:text-white transition-colors">Clubs Sportifs</a></li>
+        <li><a href="association.html" class="hover:text-white transition-colors">Associations</a></li>
+        <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="flex items-center gap-3">
+        <a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all border border-forest/20 bg-forest/5 hover:bg-forest hover:text-white hover:border-forest text-forest" id="nav-cta-btn">
+          Contact & Devis
+        </a>
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-xl text-forest hover:bg-forest/10 transition-colors" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-forest-dark py-6 px-4 shadow-xl z-40">
+      <ul class="flex flex-col gap-4 list-none text-base font-semibold text-white/90" role="list">
+        <li><a href="index.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Accueil</a></li>
+        <li><a href="scolaire.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Photos Scolaires</a></li>
+        <li><a href="sport.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Clubs Sportifs</a></li>
+        <li><a href="association.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Associations</a></li>
+        <li><a href="index.html#contact" class="block py-2 px-3 rounded-lg hover:bg-white/5">Devis & Tarifs</a></li>
+        <li><a href="index.html#contact" class="block mt-4 text-center bg-white text-forest py-3 rounded-full font-bold">Contact & Devis</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="pt-32 pb-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto bg-white border border-gray-100 rounded-[32px] p-8 sm:p-12 shadow-sm mt-8">
+      <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-forest mb-8 border-b pb-4">Politique de Confidentialité</h1>
+      
+      <div class="space-y-6 text-gray-600 text-sm sm:text-base leading-relaxed">
+        
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">1. Introduction</h2>
+          <p>
+            Tagada Studio accorde une importance primordiale à la protection et au respect de la vie privée de ses clients, notamment des parents d'élèves, des directeurs d'établissements scolaires, des présidents de clubs sportifs et des membres d'associations. La présente politique décrit comment nous collectons, utilisons, conservons et protégeons vos données à caractère personnel dans le strict respect du Règlement Général sur la Protection des Données (RGPD) et de la loi Informatique et Libertés.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">2. Responsable du traitement</h2>
+          <p>
+            Le responsable du traitement des données à caractère personnel est la société **Tagada Studio EURL**, immatriculée au RCS de Bobigny, représentée par Grégory en sa qualité de Directeur Général. Pour toute question ou demande concernant vos données, vous pouvez nous écrire à l'adresse email suivante : <a href="mailto:contact@tagadastudio.fr" class="text-forest underline font-semibold">contact@contact@tagadastudio.fr</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">3. Données collectées et finalités</h2>
+          <p>Nous recueillons et traitons les catégories de données suivantes pour des besoins précis liés à notre activité de photographe professionnel B2B :</p>
+          
+          <div class="mt-4 space-y-4">
+            <div class="bg-stone-dark/30 p-4 rounded-2xl border border-stone-slate">
+              <h3 class="font-bold text-forest text-sm uppercase tracking-wide mb-1">Formulaire de contact et demande de devis</h3>
+              <p class="text-xs sm:text-sm"><strong>Données :</strong> Nom, prénom, nom de l'établissement/structure, adresse e-mail professionnelle, numéro de téléphone, message contenant la description du besoin.</p>
+              <p class="text-xs sm:text-sm mt-1"><strong>Finalité :</strong> Établir des propositions commerciales personnalisées, répondre à vos demandes professionnelles et assurer le suivi de la relation client. (Base légale : Exécution de mesures précontractuelles).</p>
+            </div>
+
+
+
+            <div class="bg-stone-dark/30 p-4 rounded-2xl border border-stone-slate">
+              <h3 class="font-bold text-forest text-sm uppercase tracking-wide mb-1">Fichiers photographiques</h3>
+              <p class="text-xs sm:text-sm"><strong>Données :</strong> Portraits scolaires, photos de groupes, portraits sportifs individuels et collectifs.</p>
+              <p class="text-xs sm:text-sm mt-1"><strong>Finalité :</strong> Fournir les prestations de photographie pour lesquelles nous avons été mandatés par l'établissement scolaire, le club ou l'association. (Base légale : Consentement express des parents ou titulaires de l'autorité parentale, recueilli par écrit via l'établissement avant la prise de vue).</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">4. Destinataires des données</h2>
+          <p>
+            Les données personnelles et les clichés photographiques collectés sont exclusivement réservés à l'usage interne de Tagada Studio. Ils ne sont en aucun cas vendus, loués ou cédés à des tiers.
+          </p>
+          <p class="mt-2">
+            Afin de mener à bien nos prestations, nous pouvons être amenés à transmettre des données à nos sous-traitants de confiance, tous en stricte conformité avec le RGPD :
+          </p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Notre laboratoire de tirage photographique professionnel situé en France pour l'impression des photos physiques.</li>
+            <li>Nos transporteurs partenaires (ex: La Poste Colissimo) pour la livraison des commandes à domicile.</li>
+            <li>Notre plateforme technique de paiement en ligne sécurisé (chiffrement SSL).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">5. Sécurité et protection des clichés</h2>
+          <p>
+            Tagada Studio applique des mesures de sécurité techniques et organisationnelles d'une rigueur absolue pour empêcher l'accès non autorisé, la divulgation, la modification ou la perte de vos données :
+          </p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Toutes nos galeries en ligne sont **chiffrées (HTTPS)** et protégées par des codes d'accès individuels uniques générés par notre système. Les parents ne peuvent voir que les photos de leur propre enfant (grâce à nos techniques de portrait de face exclusif) et la photo de classe collective.</li>
+            <li>Les fichiers originaux sont stockés hors ligne sur des disques sécurisés et chiffrés.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">6. Durée de conservation des données</h2>
+          <p>Nous veillons à ne conserver vos données que le temps strictement nécessaire aux finalités prévues :</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li><strong>Données de contact :</strong> Conservées pendant une durée maximale de 3 ans après le dernier contact commercial.</li>
+            <li><strong>Commandes en ligne et facturation :</strong> Données de facturation conservées pendant 10 ans (obligation comptable et légale française).</li>
+            <li><strong>Portraits scolaires & clichés de clubs :</strong> Les fichiers numériques des portraits de l'année scolaire ou sportive en cours sont conservés en ligne pour commande pendant toute la durée de la saison scolaire (jusqu'au 31 juillet de l'année en cours). Passé ce délai, ils sont archivés de façon sécurisée pendant 1 an pour répondre aux éventuelles demandes de réimpressions de parents, puis définitivement supprimés.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">7. Vos droits (Accès, Rectification, Suppression)</h2>
+          <p>
+            Conformément à la réglementation européenne, vous disposez à tout moment des droits suivants sur vos données personnelles :
+          </p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li><strong>Droit d'accès :</strong> Obtenir la confirmation que vos données sont traitées et en recevoir une copie.</li>
+            <li><strong>Droit de rectification :</strong> Demander la mise à jour ou la correction de données inexactes ou incomplètes.</li>
+            <li><strong>Droit à l'effacement (« droit à l'oubli ») :</strong> Demander la suppression de vos données personnelles ou du portrait en ligne de votre enfant.</li>
+            <li><strong>Droit d'opposition :</strong> Vous opposer au traitement de vos données pour des motifs légitimes ou à des fins de prospection.</li>
+          </ul>
+          <p class="mt-3">
+            Pour exercer l'un de ces droits, il vous suffit de nous adresser une demande claire par e-mail à : <a href="mailto:contact@tagadastudio.fr" class="text-forest underline font-semibold">contact@tagadastudio.fr</a>. Nous traiterons votre demande sous un délai maximum de 30 jours conformément à la réglementation. Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés - cnil.fr).
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-forest-dark text-white border-t border-white/5 pt-16 pb-8" aria-label="Pied de page">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 gap-y-12 mb-16">
+        <div class="col-span-2 md:col-span-1 space-y-4">
+          <img src="Images/Logo.png" alt="Tagada Studio" class="h-8 sm:h-9 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
+          <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+            Spécialiste de la photographie scolaire, sportive et associative en Seine-Saint-Denis (93) et Île-de-France.
+          </p>
+        </div>
+        <nav aria-label="Expertises Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Nos Expertises</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="scolaire.html" class="hover:text-white transition-colors">Photographie Scolaire</a></li>
+            <li><a href="sport.html" class="hover:text-white transition-colors">Photo Club Sport</a></li>
+            <li><a href="association.html" class="hover:text-white transition-colors">Reportage Associatif</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Liens Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Tagada Studio</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="index.html#processus" class="hover:text-white transition-colors">Notre Méthode</a></li>
+            <li><a href="index.html#temoignages" class="hover:text-white transition-colors">Témoignages</a></li>
+            <li><a href="index.html#faq" class="hover:text-white transition-colors">Questions Fréquentes</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition-colors">Devis Gratuit</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Légal Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Législation & SEO</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="mentions-legales.html" class="hover:text-white transition-colors">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html" class="text-white font-bold transition-colors">Politique de Confidentialité</a></li>
+            <li><a href="cgv.html" class="hover:text-white transition-colors">CGV</a></li>
+            <li><a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap XML</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="border-t border-white/5 pt-8 text-center text-xs text-white/40">
+        <p>© 2026 Tagada Studio. Tous droits réservés. SIRET : XXX XXX XXX XXXXX · Neuilly-sur-Marne (93330).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header Glassmorphism effect
+    const header = document.getElementById('header-nav');
+    const navLogoText = document.getElementById('nav-logo-text');
+    const navLogoSub = document.getElementById('nav-logo-sub');
+    const navLinks = document.getElementById('nav-links');
+    const navCtaBtn = document.getElementById('nav-cta-btn');
+
+    function checkHeaderScroll() {
+      // Keep colors always scrolled on light pages, only transition padding
+      header.classList.add('scrolled', 'bg-stone/95', 'backdrop-blur-md', 'shadow-md');
+      if (window.scrollY > 40) {
+        header.classList.add('py-3');
+        header.classList.remove('py-4', 'sm:py-5');
+      } else {
+        header.classList.remove('py-3');
+        header.classList.add('py-4', 'sm:py-5');
+      }
+    }
+    window.addEventListener('scroll', checkHeaderScroll, { passive: true });
+    checkHeaderScroll();
+
+    // Mobile Menu Toggle
+    const menuToggleBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuToggleBtn.addEventListener('click', () => {
+      const isExpanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
+      menuToggleBtn.setAttribute('aria-expanded', !isExpanded);
+      
+      mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

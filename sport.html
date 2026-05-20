@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Photo Club Sport | Tagada Studio (93) Île-de-France</title>
+  <meta name="description" content="Spécialiste de la photo de club de sport à Neuilly-sur-Marne et en Île-de-France. Photos d'équipe, portraits de licenciés et reportage action. Partenariat de financement club." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Tagada Studio" />
+  <link rel="canonical" href="https://tagadastudio.fr/sport.html" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tagadastudio.fr/sport.html" />
+  <meta property="og:title" content="Photo Club Sport | Tagada Studio Île-de-France" />
+  <meta property="og:description" content="Sublimez l'esprit de vos équipes avec nos photos de club sportives. Session photo pro et reversement de commission de vente pour financer vos projets." />
+  <meta property="og:image" content="https://tagadastudio.fr/Images/photo_sport.png" />
+
+  <!-- Google Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#1A4D2E',
+              light: '#256D41',
+              dark: '#0F2F1B',
+              soft: '#E8F3EC',
+            },
+            stone: {
+              DEFAULT: '#FDFBF7',
+              dark: '#F3EFE9',
+              slate: '#E9E4DC',
+            },
+            ink: '#0C110D',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #FDFBF7;
+      color: #0C110D;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary svg { transform: rotate(180deg); }
+    details summary svg { transition: transform 0.3s ease; }
+
+    /* Scrolled dynamic styles for color contrast */
+    #header-nav.scrolled #nav-links a {
+      color: rgba(12, 17, 13, 0.8) !important;
+    }
+    #header-nav.scrolled #nav-links a:hover {
+      color: #1A4D2E !important;
+    }
+    #header-nav.scrolled #nav-links a.active-link {
+      color: #1A4D2E !important;
+      border-color: rgba(26, 77, 46, 0.6) !important;
+    }
+  </style>
+</head>
+<body class="bg-stone text-ink antialiased selection:bg-forest selection:text-white">
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" id="header-nav">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between" aria-label="Navigation principale">
+      
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="Tagada Studio - Accueil">
+        <img id="nav-logo-img" src="Images/Logo-tagada-studio-fond-transparent2-800 2 - Petite.png" alt="Tagada Studio" class="h-10 sm:h-11 w-auto object-contain transition-all duration-300 group-hover:scale-105" />
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <ul class="hidden md:flex items-center gap-8 list-none text-sm font-medium text-white/90" id="nav-links" role="list">
+        <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
+        <li><a href="scolaire.html" class="hover:text-white transition-colors">Photos Scolaires</a></li>
+        <li><a href="sport.html" class="text-white border-b-2 border-white/60 pb-1 font-bold active-link">Clubs Sportifs</a></li>
+        <li><a href="association.html" class="hover:text-white transition-colors">Associations</a></li>
+        <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="flex items-center gap-3">
+        <a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all border border-white/20 bg-white/10 hover:bg-white hover:text-forest hover:border-white text-white" id="nav-cta-btn">
+          Contact & Devis
+        </a>
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-xl text-white" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-forest-dark py-6 px-4 shadow-xl z-40">
+      <ul class="flex flex-col gap-4 list-none text-base font-semibold text-white/90" role="list">
+        <li><a href="index.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Accueil</a></li>
+        <li><a href="scolaire.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Photos Scolaires</a></li>
+        <li><a href="sport.html" class="block py-2 px-3 rounded-lg bg-white/10 text-white">Clubs Sportifs</a></li>
+        <li><a href="association.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Associations</a></li>
+        <li><a href="index.html#contact" class="block py-2 px-3 rounded-lg hover:bg-white/5">Devis & Tarifs</a></li>
+        <li><a href="index.html#contact" class="block mt-4 text-center bg-white text-forest py-3 rounded-full font-bold">Contact & Devis</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- ===================== HERO SILO SPORT ===================== -->
+    <section class="relative min-h-[60svh] flex flex-col justify-center bg-gradient-to-b from-forest-dark to-forest text-white pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden" aria-labelledby="silo-sport-heading">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/[0.03] via-transparent to-transparent pointer-events-none" aria-hidden="true"></div>
+      
+      <div class="relative max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- TEXTUAL COLUMN -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 text-stone-dark text-xs sm:text-sm font-semibold tracking-wide shadow-inner">
+            ⚽ Session Photo Club Sportif & Commission Solidaire
+          </div>
+          
+          <h1 id="silo-sport-heading" class="font-display text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight">
+            Photo club sport<br/>
+            <span class="text-stone-dark italic font-normal">Identité & Financement</span>
+          </h1>
+          
+          <p class="text-base sm:text-lg text-white/85 leading-relaxed max-w-2xl font-light">
+            Sublimez l'identité de votre club et offrez à vos licenciés des clichés mémorables de niveau professionnel. Nous vous proposons un système exclusif de financement participatif qui reverse un pourcentage des ventes à votre club pour soutenir ses projets sportifs.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="#services-list" class="px-8 py-3.5 rounded-full text-base font-bold bg-white text-forest hover:bg-stone-dark hover:-translate-y-0.5 active:translate-y-0 shadow-lg transition-all text-center">
+              Nos formules photos
+            </a>
+            <a href="index.html#contact" class="px-8 py-3.5 rounded-full text-base font-bold border border-white/30 text-white bg-transparent hover:bg-white/10 hover:-translate-y-0.5 active:translate-y-0 transition-all text-center">
+              Demander une date d'intervention
+            </a>
+          </div>
+        </div>
+
+        <!-- IMAGE COLUMN (Custom asset!) -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="absolute w-72 h-72 rounded-full bg-forest-light/20 blur-[50px] pointer-events-none" aria-hidden="true"></div>
+          <div class="relative w-full max-w-sm rounded-[36px] overflow-hidden border-4 border-white/10 shadow-2xl aspect-square">
+            <img src="Images/photo_sport.png" alt="Youth soccer team celebrating in forest green jersey, by Tagada Studio" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SERVICE LIST ===================== -->
+    <section id="services-list" class="py-20 sm:py-28 bg-stone relative" aria-labelledby="services-heading">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- SECTION TITLE -->
+        <div class="text-center max-w-2xl mx-auto mb-20 reveal">
+          <span class="text-forest font-bold tracking-widest text-xs uppercase bg-forest/10 px-4 py-1.5 rounded-full inline-block mb-4">Notre Offre Sport</span>
+          <h2 id="services-heading" class="font-display text-3xl sm:text-4xl font-extrabold text-ink mb-4">Des photos de haute qualité pour votre club</h2>
+          <p class="text-gray-600">Nous nous adaptons à toutes les disciplines et structures sportives locales.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- Column 1 -->
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-forest-soft text-forest flex items-center justify-center font-bold text-lg mb-6">
+                🏆
+              </div>
+              <h3 class="font-display font-bold text-xl text-ink mb-4">Portraits Licenciés & Composites</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">
+                Photos individuelles de chaque licencié avec un éclairage soigné. Nous créons des compositions personnalisées (nom du licencié, logo du club, couleur du maillot) pour un résultat ultra-pro digne des plus grands clubs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal" style="transition-delay: 150ms;">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-forest-soft text-forest flex items-center justify-center font-bold text-lg mb-6">
+                👥
+              </div>
+              <h3 class="font-display font-bold text-xl text-ink mb-4">Photos d'Équipe Officielles</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">
+                Prise de vue des différentes sections (des U6 aux Seniors). Cadrage parfait, alignement dynamique et haute définition pour les calendriers de fin d'année et vos sponsors officiels.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal" style="transition-delay: 300ms;">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-forest-soft text-forest flex items-center justify-center font-bold text-lg mb-6">
+                ⚡
+              </div>
+              <h3 class="font-display font-bold text-xl text-ink mb-4">Reportage Action en Match</h3>
+              <p class="text-gray-500 text-sm leading-relaxed">
+                Nos photographes se déplacent au bord du terrain, de la piste ou des tatamis pour immortaliser les licenciés en plein effort. Des images fortes et spectaculaires pour dynamiser vos réseaux sociaux et vos communiqués.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMMISSION / DONATION DETAILS ===================== -->
+    <section class="py-20 sm:py-28 bg-stone-dark/35" aria-labelledby="finance-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          
+          <!-- IMAGE DETAIL (Composition or graphic look) -->
+          <div class="bg-white rounded-[32px] p-8 sm:p-12 border border-gray-100 shadow-xl space-y-6 relative order-last lg:order-first reveal">
+            <div class="absolute w-40 h-40 rounded-full bg-forest-soft blur-[40px] -bottom-20 -left-20 pointer-events-none" aria-hidden="true"></div>
+            
+            <h3 class="font-display font-extrabold text-2xl text-forest mb-4">Le mécanisme de financement en 4 étapes :</h3>
+            
+            <ol class="space-y-4 text-sm sm:text-base text-gray-600 list-none">
+              <li class="flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-forest text-white font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+                <span><strong>Signature de la convention</strong> : Accord gratuit sur les tarifs et la commission.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-forest text-white font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+                <span><strong>Prise de vue des licenciés</strong> : Nous photographions les équipes et individuels lors des entraînements.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-forest text-white font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+                <span><strong>Vente 100% en ligne</strong> : Les parents et adhérents commandent de façon autonome et sécurisée.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-6 h-6 rounded-full bg-forest text-white font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+                <span><strong>Versement de la cagnotte</strong> : À la fin de la période, Tagada Studio reverse directement la commission négociée au trésorier du club.</span>
+              </li>
+            </ol>
+
+            <div class="pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center gap-4">
+              <div class="text-center sm:text-left">
+                <p class="text-ink font-bold text-sm">Une question comptable ou fiscale ?</p>
+                <p class="text-xs text-gray-600">Nous fournissons tous les justificatifs légaux (reçus de dons, conventions).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TEXT AREA -->
+          <div class="space-y-8 reveal">
+            <div>
+              <span class="text-forest font-bold tracking-widest text-xs uppercase bg-forest/10 px-4 py-1.5 rounded-full inline-block mb-4">Partenariat Solidaire Club</span>
+              <h2 id="finance-heading" class="font-display text-3xl sm:text-5xl font-black text-ink mb-6">Financez vos projets grâce aux photos de club</h2>
+              <p class="text-gray-600 leading-relaxed">
+                Le tissu associatif sportif a besoin de ressources régulières pour financer ses déplacements, l'achat de matériel (ballons, chasubles, buts, tatamis) ou le soutien aux familles défavorisées. 
+              </p>
+              <p class="text-gray-600 leading-relaxed mt-4">
+                En collaborant avec **Tagada Studio**, vous offrez un service de photographie sportive haut de gamme sans débourser un centime. Nous prenons en charge l'ensemble de l'organisation et reversons un pourcentage contractuel du chiffre d'affaires généré par les ventes de photos directement à votre club.
+              </p>
+            </div>
+
+            <!-- Focus feature -->
+            <div class="flex gap-4 items-start bg-forest-soft rounded-2xl p-5 border border-forest/10">
+              <div class="w-10 h-10 rounded-xl bg-forest text-white flex items-center justify-center flex-shrink-0 font-bold shadow-md">
+                ⚽
+              </div>
+              <div>
+                <h4 class="font-bold text-forest mb-1">Zéro logistique administrative pour vos bénévoles</h4>
+                <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                  Pas d'argent à manipuler, pas de relances par mail. Nous gérons le système de A à Z via nos galeries sécurisées privées. Vos éducateurs se concentrent uniquement sur le terrain !
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ACCORDION SPECIFIC ===================== -->
+    <section class="py-20 sm:py-28 bg-stone relative" aria-labelledby="faq-sport-heading">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- TITLE -->
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <span class="text-forest font-bold tracking-widest text-xs uppercase bg-forest/10 px-4 py-1.5 rounded-full inline-block mb-4">FAQ Clubs</span>
+          <h2 id="faq-sport-heading" class="font-display text-3xl sm:text-4xl font-extrabold text-ink mb-4">Questions fréquentes des clubs sportifs</h2>
+          <p class="text-gray-600">Tout ce que se demandent les présidents de clubs, entraîneurs et parents de licenciés.</p>
+        </div>
+
+        <!-- ACCORDIONS -->
+        <div class="space-y-4 reveal">
+          
+          <details class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-5 font-bold text-ink cursor-pointer hover:text-forest transition-colors focus:outline-none select-none">
+              <span class="pr-8 text-sm sm:text-base">Combien de temps faut-il pour organiser le shooting de tout un club ?</span>
+              <span class="w-8 h-8 rounded-full bg-forest-soft flex items-center justify-center text-forest flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4">
+              Nous calons le planning de passage en collaboration étroite avec votre secrétariat. Nous organisons généralement les séances sur un week-end complet ou en semaine lors des créneaux d'entraînement (par tranche de **15 minutes par équipe**). Notre logistique rodée permet d'enchaîner rapidement sans perturber le travail des éducateurs.
+            </div>
+          </details>
+
+          <details class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-5 font-bold text-ink cursor-pointer hover:text-forest transition-colors focus:outline-none select-none">
+              <span class="pr-8 text-sm sm:text-base">Quel est le montant de la commission reversée au club ?</span>
+              <span class="w-8 h-8 rounded-full bg-forest-soft flex items-center justify-center text-forest flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4">
+              Le taux de commission standard se situe généralement entre **15% et 20% du montant total des ventes HT** réalisées sur votre galerie de club. Cette commission fait l'objet d'une convention signée au préalable, en toute clarté. Le virement est effectué sous 30 jours après la clôture de la galerie.
+            </div>
+          </details>
+
+          <details class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm group">
+            <summary class="flex justify-between items-center px-6 py-5 font-bold text-ink cursor-pointer hover:text-forest transition-colors focus:outline-none select-none">
+              <span class="pr-8 text-sm sm:text-base">Proposez-vous des affiches de sponsoring et calendriers ?</span>
+              <span class="w-8 h-8 rounded-full bg-forest-soft flex items-center justify-center text-forest flex-shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </summary>
+            <div class="px-6 pb-5 text-gray-600 leading-relaxed text-sm sm:text-base border-t border-gray-50 pt-4">
+              Oui, tout à fait ! Nous pouvons concevoir des calendriers officiels de club avec les photos d'équipe et les encarts publicitaires de vos sponsors locaux. Nous gérons également l'impression en haute qualité. C'est un excellent vecteur de communication et de financement supplémentaire pour votre saison sportive.
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACTION BANNER ===================== -->
+    <section class="py-20 bg-gradient-to-br from-forest-dark via-forest to-forest-dark text-white text-center relative overflow-hidden" aria-labelledby="banner-heading">
+      <div class="absolute inset-0 bg-white/[0.02] pointer-events-none" aria-hidden="true"></div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <h2 id="banner-heading" class="font-display text-3xl sm:text-5xl font-bold mb-4">Envie de dynamiser l'image de votre club ?</h2>
+        <p class="text-white/70 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+          Contactez-nous pour réserver votre week-end de shooting ou programmer une rencontre de présentation auprès de votre comité directeur.
+        </p>
+        <a href="index.html#contact" class="px-8 py-4 rounded-full text-base font-bold bg-white text-forest hover:bg-stone-dark hover:-translate-y-0.5 active:translate-y-0 shadow-lg inline-flex items-center gap-2">
+          Demander une convention & un Devis gratuit
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-forest-dark text-white border-t border-white/5 pt-16 pb-8" aria-label="Pied de page">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 gap-y-12 mb-16">
+        
+        <!-- COLUMN 1: BRAND -->
+        <div class="col-span-2 md:col-span-1 space-y-4">
+          <img src="Images/Logo-tagada-studio-fond-transparent2-800 2 - Petite.png" alt="Tagada Studio" class="h-8 sm:h-9 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
+          <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+            Spécialiste de la photographie scolaire, sportive et associative en Seine-Saint-Denis (93) et Île-de-France. Fiers d'un artisanat moderne et engagé.
+          </p>
+        </div>
+
+        <!-- COLUMN 2: SILOS -->
+        <nav aria-label="Silos Navigation Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Nos Expertises</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="scolaire.html" class="hover:text-white transition-colors">Photographie Scolaire</a></li>
+            <li><a href="sport.html" class="hover:text-white text-white font-bold transition-colors">Photo Club Sport</a></li>
+            <li><a href="association.html" class="hover:text-white transition-colors">Reportage Associatif</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
+          </ul>
+        </nav>
+
+        <!-- COLUMN 3: DIRECT LINKS -->
+        <nav aria-label="Liens Utiles Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Tagada Studio</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="index.html#processus" class="hover:text-white transition-colors">Notre Méthode</a></li>
+            <li><a href="index.html#temoignages" class="hover:text-white transition-colors">Témoignages</a></li>
+            <li><a href="index.html#faq" class="hover:text-white transition-colors">Questions Fréquentes</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition-colors">Devis Gratuit</a></li>
+          </ul>
+        </nav>
+
+        <!-- COLUMN 4: REGULATORY -->
+        <nav aria-label="Légal Navigation Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Législation & SEO</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="mentions-legales.html" class="hover:text-white transition-colors">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html" class="hover:text-white transition-colors">Politique de Confidentialité</a></li>
+            <li><a href="cgv.html" class="hover:text-white transition-colors">CGV</a></li>
+            <li><a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap XML</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
+        <p>© 2026 Tagada Studio. Tous droits réservés. SIRET : 984 595 538 00013 · Neuilly-sur-Marne (93330).</p>
+        <p class="text-center md:text-right">
+          Ciblage Local : <a href="scolaire.html" class="hover:text-white/70 underline transition-colors">Photographie scolaire Neuilly-sur-Marne</a> · <a href="sport.html" class="hover:text-white/70 underline transition-colors">Photo club sport</a> · <a href="association.html" class="hover:text-white/70 underline transition-colors">Reportage associatif Île-de-France</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    // Header Glassmorphism effect
+    const header = document.getElementById('header-nav');
+    const navLogoImg = document.getElementById('nav-logo-img');
+    const navLogoText = document.getElementById('nav-logo-text');
+    const navLogoSub = document.getElementById('nav-logo-sub');
+    const navLinks = document.getElementById('nav-links');
+    const navCtaBtn = document.getElementById('nav-cta-btn');
+
+    function checkHeaderScroll() {
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled', 'bg-stone/95', 'backdrop-blur-md', 'shadow-md', 'py-3');
+        header.classList.remove('py-4', 'sm:py-5');
+        
+        if (navLogoImg) navLogoImg.src = 'Images/Logo.png';
+        if (navLogoText) navLogoText.style.color = '#1A4D2E';
+        if (navLogoSub) navLogoSub.style.color = '#0C110D';
+        if (navLinks) {
+          navLinks.classList.remove('text-white/90');
+          navLinks.classList.add('text-ink/80');
+        }
+        if (navCtaBtn) {
+          navCtaBtn.classList.remove('text-white', 'border-white/20', 'bg-white/10', 'hover:bg-white', 'hover:text-forest', 'hover:border-white');
+          navCtaBtn.classList.add('text-forest', 'border-forest/20', 'bg-forest/5', 'hover:bg-forest', 'hover:text-white', 'hover:border-forest');
+        }
+        if (mobileMenuToggle) {
+          mobileMenuToggle.classList.remove('text-white', 'hover:bg-white/10');
+          mobileMenuToggle.classList.add('text-forest', 'hover:bg-forest/10');
+        }
+      } else {
+        header.classList.remove('scrolled', 'bg-stone/95', 'backdrop-blur-md', 'shadow-md', 'py-3');
+        header.classList.add('py-4', 'sm:py-5');
+
+        if (navLogoImg) navLogoImg.src = 'Images/Logo-tagada-studio-fond-transparent2-800 2 - Petite.png';
+        if (navLogoText) navLogoText.style.color = '';
+        if (navLogoSub) navLogoSub.style.color = '';
+        if (navLinks) {
+          navLinks.classList.add('text-white/90');
+          navLinks.classList.remove('text-ink/80');
+        }
+        if (navCtaBtn) {
+          navCtaBtn.classList.add('text-white', 'border-white/20', 'bg-white/10', 'hover:bg-white', 'hover:text-forest', 'hover:border-white');
+          navCtaBtn.classList.remove('text-forest', 'border-forest/20', 'bg-forest/5', 'hover:bg-forest', 'hover:text-white', 'hover:border-forest');
+        }
+        if (mobileMenuToggle) {
+          mobileMenuToggle.classList.remove('text-forest', 'hover:bg-forest/10');
+          mobileMenuToggle.classList.add('text-white', 'hover:bg-white/10');
+        }
+      }
+    }
+    window.addEventListener('scroll', checkHeaderScroll, { passive: true });
+    checkHeaderScroll();
+
+    // Mobile Menu Toggle
+    const menuToggleBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuToggleBtn.addEventListener('click', () => {
+      const isExpanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
+      menuToggleBtn.setAttribute('aria-expanded', !isExpanded);
+      
+      mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Scroll Reveal Effects
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>

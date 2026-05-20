@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions Générales de Vente (CGV) | Tagada Studio</title>
+  <meta name="description" content="Conditions Générales de Vente (CGV) de Tagada Studio. Consultez nos conditions d'achat de tirages et fichiers numériques scolaires et associatifs." />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#1A4D2E',
+              light: '#256D41',
+              dark: '#0F2F1B',
+              soft: '#E8F3EC',
+            },
+            stone: {
+              DEFAULT: '#FDFBF7',
+              dark: '#F3EFE9',
+              slate: '#E9E4DC',
+            },
+            ink: '#0C110D',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #FDFBF7;
+      color: #0C110D;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* Scrolled dynamic styles for color contrast */
+    #header-nav.scrolled #nav-links a {
+      color: rgba(12, 17, 13, 0.8) !important;
+    }
+    #header-nav.scrolled #nav-links a:hover {
+      color: #1A4D2E !important;
+    }
+    #header-nav.scrolled #nav-links a.active-link {
+      color: #1A4D2E !important;
+      border-color: rgba(26, 77, 46, 0.6) !important;
+    }
+  </style>
+</head>
+<body class="bg-stone text-ink antialiased selection:bg-forest selection:text-white">
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-stone/95 backdrop-blur-md shadow-md py-4 sm:py-5 scrolled" id="header-nav">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex items-center justify-between" aria-label="Navigation principale">
+      
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none" aria-label="Tagada Studio - Accueil">
+        <img id="nav-logo-img" src="Images/Logo.png" alt="Tagada Studio" class="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105 duration-300" />
+      </a>
+
+      <!-- DESKTOP NAV -->
+      <ul class="hidden md:flex items-center gap-8 list-none text-sm font-medium text-ink/80" id="nav-links" role="list">
+        <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
+        <li><a href="scolaire.html" class="hover:text-white transition-colors">Photos Scolaires</a></li>
+        <li><a href="sport.html" class="hover:text-white transition-colors">Clubs Sportifs</a></li>
+        <li><a href="association.html" class="hover:text-white transition-colors">Associations</a></li>
+        <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <div class="flex items-center gap-3">
+        <a href="index.html#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all border border-forest/20 bg-forest/5 hover:bg-forest hover:text-white hover:border-forest text-forest" id="nav-cta-btn">
+          Contact & Devis
+        </a>
+        <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-xl text-forest hover:bg-forest/10 transition-colors" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-forest-dark py-6 px-4 shadow-xl z-40">
+      <ul class="flex flex-col gap-4 list-none text-base font-semibold text-white/90" role="list">
+        <li><a href="index.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Accueil</a></li>
+        <li><a href="scolaire.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Photos Scolaires</a></li>
+        <li><a href="sport.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Clubs Sportifs</a></li>
+        <li><a href="association.html" class="block py-2 px-3 rounded-lg hover:bg-white/5">Associations</a></li>
+        <li><a href="index.html#contact" class="block py-2 px-3 rounded-lg hover:bg-white/5">Devis & Tarifs</a></li>
+        <li><a href="index.html#contact" class="block mt-4 text-center bg-white text-forest py-3 rounded-full font-bold">Contact & Devis</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="pt-32 pb-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto bg-white border border-gray-100 rounded-[32px] p-8 sm:p-12 shadow-sm mt-8">
+      <h1 class="font-display text-3xl sm:text-4xl font-extrabold text-forest mb-8 border-b pb-4">Conditions Générales de Vente (CGV)</h1>
+      
+      <div class="space-y-6 text-gray-600 text-sm sm:text-base leading-relaxed">
+        
+        <p class="text-xs text-gray-600 italic">Dernière mise à jour : 20 mai 2026</p>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">1. Champ d’application et objet</h2>
+          <p>
+            Les présentes Conditions Générales de Vente (CGV) s'appliquent sans restriction ni réserve à l'ensemble des ventes en ligne de tirages photographiques physiques et de fichiers numériques (« produits ») réalisées sur le site internet <a href="index.html" class="text-forest underline font-semibold">tagadastudio.fr</a> par des particuliers (les « clients » ou « parents d’élèves »).
+          </p>
+          <p class="mt-2">
+            Elles régissent également les contrats de prestation conclus directement entre **Tagada Studio** et les établissements scolaires, les associations ou les clubs de sport pour la réalisation de séances de prises de vues photographiques.
+          </p>
+          <p class="mt-2">
+            Toute validation de commande sur l'Espace Commande vaut acceptation sans réserve des présentes CGV.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">2. Identité de l'entreprise</h2>
+          <p>
+            Les prestations et produits sont vendus par :<br />
+            <strong>Tagada Studio EURL</strong>, entreprise de photographie professionnelle.<br />
+            Immatriculée au Registre du Commerce et des Sociétés de Bobigny sous le numéro SIRET : XXX XXX XXX XXXXX.<br />
+            Siège social : Neuilly-sur-Marne (93330) – France.<br />
+            Adresse email : <a href="mailto:contact@tagadastudio.fr" class="text-forest underline">contact@tagadastudio.fr</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">3. Commande et accès aux galeries</h2>
+          <p>
+            Pour commander les produits, l'utilisateur doit se connecter à la galerie en ligne sécurisée à l'aide de l'identifiant et du code d'accès personnel uniques distribués individuellement sous enveloppe ou par e-mail.
+          </p>
+          <p class="mt-2">
+            La commande s'effectue en sélectionnant les tirages papier (différents formats disponibles) ou les formules de fichiers numériques haute définition, puis en complétant les informations de livraison et de paiement. La vente est considérée comme ferme et définitive après la validation et la confirmation du paiement en ligne.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">4. Tarifs et conditions de paiement</h2>
+          <p>
+            Les prix des produits sont indiqués en Euros (€) Toutes Taxes Comprises (TTC) sur les galeries en ligne. Tagada Studio se réserve le droit de modifier ses tarifs à tout moment, mais les produits commandés sont facturés au prix en vigueur lors de l'enregistrement de la commande.
+          </p>
+          <p class="mt-2">
+            Le paiement est exigible en totalité dès la commande. Le règlement s'effectue exclusivement par carte bancaire via le système de paiement hautement sécurisé intégré au site internet. Les transactions bancaires sont entièrement cryptées sous protocole SSL/TLS.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">5. Production et Livraison</h2>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>
+              <strong>Qualité professionnelle :</strong> Tous nos tirages physiques sont exécutés par un laboratoire photo professionnel français spécialisé de haute technologie sur papier d'art à haute teneur d'archivage.
+            </li>
+            <li>
+              <strong>Modes de livraison :</strong> Selon les modalités validées avec la structure d'accueil (école, club ou association) :
+              <ol class="list-decimal pl-5 mt-1 space-y-1">
+                <li><em>Livraison groupée gratuite :</em> Toutes les commandes sont imprimées en une seule fois à la fermeture de la galerie et remises à l'établissement qui se charge de leur distribution aux enfants/licenciés.</li>
+                <li><em>Livraison directe à domicile :</em> Expédiées par Colissimo ou lettre suivie à l'adresse indiquée par le client, moyennant des frais de port fixes détaillés lors de l'achat.</li>
+              </ol>
+            </li>
+            <li>
+              <strong>Délais :</strong> Les commandes de tirages physiques sont produites et expédiées sous un délai standard de 10 à 15 jours ouvrés après la fermeture de la galerie éphémère. Les fichiers numériques sont téléchargeables immédiatement après la transaction bancaire.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">6. Absence de droit de rétractation</h2>
+          <p class="text-justify">
+            Conformément aux dispositions de l'article **L. 221-28 du Code de la consommation français**, le droit de rétractation ne peut être exercé pour :
+          </p>
+          <ol class="list-decimal pl-5 mt-2 space-y-2">
+            <li>
+              Les fournitures de biens confectionnés selon les spécifications du consommateur ou nettement personnalisés (<strong>Article L.221-28 3°</strong>). Les tirages photographiques physiques représentant le portrait individuel de l'enfant ou du licencié relèvent de cette catégorie de personnalisation unique ; par conséquent, **aucun remboursement ou retour n'est possible** en cas de changement d'avis.
+            </li>
+            <li>
+              La fourniture d'un contenu numérique non fourni sur un support matériel dont l'exécution a commencé après accord préalable exprès du consommateur (<strong>Article L.221-28 13°</strong>). Les téléchargements immédiats de fichiers numériques haute définition achetés ne peuvent ainsi faire l'objet d'aucun droit de rétractation.
+            </li>
+          </ol>
+          <p class="mt-3 bg-forest-soft p-4 rounded-xl border border-forest/15 text-forest text-sm">
+            <strong>Garantie qualité :</strong> Malgré l'absence légale de rétractation, Tagada Studio s'engage à réimprimer ou rembourser tout tirage qui présenterait un défaut matériel de fabrication évident ou une dégradation survenue durant le transport, sur présentation d'une preuve photographique envoyée par e-mail dans les 48h suivant la réception.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">7. Propriété Intellectuelle et Droits d'Auteur</h2>
+          <p>
+            Tous les clichés réalisés par Tagada Studio sont des œuvres de l'esprit protégées par la législation française et internationale sur le droit d'auteur (Code de la Propriété Intellectuelle).
+          </p>
+          <p class="mt-2">
+            L'achat d'un tirage papier ou d'un fichier numérique transfère la propriété du support physique ou le droit d'utilisation du fichier pour un **usage strictement privé, familial et non commercial**.
+          </p>
+          <p class="mt-2">
+            Sont formellement interdites sans accord écrit de Tagada Studio : la revente des clichés, leur exploitation publicitaire ou commerciale, ainsi que toute altération, recadrage ou modification numérique des photos.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="font-display text-xl font-bold text-ink mb-3">8. Droit applicable et Règlement des litiges</h2>
+          <p>
+            Les présentes CGV sont soumises à la loi française. En cas de réclamation ou de litige, le client s'engage à contacter en priorité Tagada Studio par email afin de rechercher une solution amiable. À défaut d'accord amiable, le litige sera porté devant le tribunal compétent de Bobigny.
+          </p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-forest-dark text-white border-t border-white/5 pt-16 pb-8" aria-label="Pied de page">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 gap-y-12 mb-16">
+        <div class="col-span-2 md:col-span-1 space-y-4">
+          <img src="Images/Logo.png" alt="Tagada Studio" class="h-8 sm:h-9 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity" />
+          <p class="text-white/60 text-sm leading-relaxed max-w-xs">
+            Spécialiste de la photographie scolaire, sportive et associative en Seine-Saint-Denis (93) et Île-de-France.
+          </p>
+        </div>
+        <nav aria-label="Expertises Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Nos Expertises</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="scolaire.html" class="hover:text-white transition-colors">Photographie Scolaire</a></li>
+            <li><a href="sport.html" class="hover:text-white transition-colors">Photo Club Sport</a></li>
+            <li><a href="association.html" class="hover:text-white transition-colors">Reportage Associatif</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Liens Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Tagada Studio</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="index.html#processus" class="hover:text-white transition-colors">Notre Méthode</a></li>
+            <li><a href="index.html#temoignages" class="hover:text-white transition-colors">Témoignages</a></li>
+            <li><a href="index.html#faq" class="hover:text-white transition-colors">Questions Fréquentes</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition-colors">Devis Gratuit</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Légal Footer">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Législation & SEO</h4>
+          <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="mentions-legales.html" class="hover:text-white transition-colors">Mentions Légales</a></li>
+            <li><a href="politique-confidentialite.html" class="hover:text-white transition-colors">Politique de Confidentialité</a></li>
+            <li><a href="cgv.html" class="text-white font-bold transition-colors">CGV</a></li>
+            <li><a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap XML</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="border-t border-white/5 pt-8 text-center text-xs text-white/40">
+        <p>© 2026 Tagada Studio. Tous droits réservés. SIRET : XXX XXX XXX XXXXX · Neuilly-sur-Marne (93330).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header Glassmorphism effect
+    const header = document.getElementById('header-nav');
+    const navLogoText = document.getElementById('nav-logo-text');
+    const navLogoSub = document.getElementById('nav-logo-sub');
+    const navLinks = document.getElementById('nav-links');
+    const navCtaBtn = document.getElementById('nav-cta-btn');
+
+    function checkHeaderScroll() {
+      // Keep colors always scrolled on light pages, only transition padding
+      header.classList.add('scrolled', 'bg-stone/95', 'backdrop-blur-md', 'shadow-md');
+      if (window.scrollY > 40) {
+        header.classList.add('py-3');
+        header.classList.remove('py-4', 'sm:py-5');
+      } else {
+        header.classList.remove('py-3');
+        header.classList.add('py-4', 'sm:py-5');
+      }
+    }
+    window.addEventListener('scroll', checkHeaderScroll, { passive: true });
+    checkHeaderScroll();
+
+    // Mobile Menu Toggle
+    const menuToggleBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuToggleBtn.addEventListener('click', () => {
+      const isExpanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
+      menuToggleBtn.setAttribute('aria-expanded', !isExpanded);
+      
+      mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
