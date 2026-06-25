@@ -721,7 +721,7 @@
           
           <!-- FORMULAR CARD -->
           <div class="bg-white rounded-[32px] p-8 shadow-2xl border border-gray-50 lg:col-span-3 reveal">
-            <form id="contact-form" action="https://www.fotostudio.io/f/28346edbb9dafb15685cc1bf99067ce6" method="POST" class="space-y-6">
+            <form id="contact-form" method="POST" class="space-y-6">
               
               <!-- Vos Coordonnées -->
               <div class="space-y-4">
@@ -1102,6 +1102,34 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
     revealElements.forEach(el => revealObserver.observe(el));
+
+    // 5. Dynamic Form Action & Honeypot Validation to prevent automated spam
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      const loadTime = Date.now();
+      
+      contactForm.addEventListener('submit', function(e) {
+        // Honeypot check: If the hidden input is filled, it's a bot
+        const gotcha = contactForm.querySelector('input[name="_gotcha"]');
+        if (gotcha && gotcha.value !== '') {
+          e.preventDefault();
+          console.warn('Spam detected via honeypot.');
+          return;
+        }
+        
+        // Time check: If submitted in less than 4 seconds, it's likely a bot
+        const timeDiff = Date.now() - loadTime;
+        if (timeDiff < 4000) {
+          e.preventDefault();
+          console.warn('Spam detected (too fast).');
+          return;
+        }
+        
+        // Set the action URL dynamically to prevent simple scraper bots from finding the endpoint in raw HTML
+        // Base64 decodes to: https://www.fotostudio.io/f/28346edbb9dafb15685cc1bf99067ce6
+        contactForm.action = atob("aHR0cHM6Ly93d3cuZm90b3N0dWRpby5pby9mLzI4MzQ2ZWRiYjlkYWZiMTU2ODVjYzFiZjk5MDY3Y2U2");
+      });
+    }
   </script>
 </body>
 </html>
