@@ -15,8 +15,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary SEO Meta Tags -->
-  <title>Reportage Associatif | Tagada Studio (93) Île-de-France</title>
-  <meta name="description" content="Photographe professionnel spécialisé dans le reportage associatif à Neuilly-sur-Marne et Île-de-France. Photos de galas, ateliers et communication associative." />
+  <title>Reportage Associatif & Événementiel en Île-de-France | Tagada Studio</title>
+  <meta name="description" content="Photographe professionnel spécialisé dans le reportage associatif à Neuilly-sur-Marne (93) et en Île-de-France. Photos de galas, spectacles et événements avec tarifs solidaires." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Tagada Studio" />
   <link rel="canonical" href="https://tagadastudio.fr/association.html" />
@@ -24,13 +24,15 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tagadastudio.fr/association.html" />
-  <meta property="og:title" content="Reportage Associatif | Tagada Studio Île-de-France" />
+  <meta property="og:title" content="Reportage Associatif & Événementiel en Île-de-France | Tagada Studio" />
   <meta property="og:description" content="Valorisez vos projets collectifs. Reportages d'ateliers, spectacles et galas de fin d'année avec un regard humain et des tarifs solidaires." />
-  <meta property="og:image" content="https://tagadastudio.fr/Images/photo_association.png" />
+  <meta property="og:image" content="https://tagadastudio.fr/Images/photo_association.webp" />
 
   <!-- Google Fonts & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -100,6 +102,73 @@
       border-color: rgba(26, 77, 46, 0.6) !important;
     }
   </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://tagadastudio.fr/association.html#webpage",
+        "url": "https://tagadastudio.fr/association.html",
+        "name": "Reportage Photo Associatif | Tagada Studio",
+        "description": "Reportages d'ateliers, pièces de théâtre, galas de danse et événements pour associations culturelles et sportives en Île-de-France.",
+        "breadcrumb": {
+          "@id": "https://tagadastudio.fr/association.html#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tagadastudio.fr/association.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://tagadastudio.fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Associations",
+            "item": "https://tagadastudio.fr/association.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tagadastudio.fr/association.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Comment gérez-vous le droit à l'image des participants lors d'événements publics ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pour les événements et ateliers fermés, l'association doit recueillir au préalable les autorisations de droit à l'image. Lors d'événements publics plus larges, nous appliquons une charte de discrétion stricte et retirons immédiatement tout cliché sur simple demande."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vos photographes perturbent-ils le déroulement des pièces de théâtre ou galas ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolument pas ! Nous utilisons des boîtiers hybrides professionnels dotés de déclencheurs électroniques 100% silencieux et des objectifs de type téléobjectifs. Nous n'utilisons jamais de flash en cours de représentation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien de temps à l'avance faut-il réserver pour un gala annuel ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Les galas se concentrent majoritairement sur les mois de mai, juin et décembre. Pour sécuriser un photographe lors de ces périodes, nous vous conseillons de nous contacter 3 à 4 mois avant l'événement."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-stone text-ink antialiased selection:bg-forest selection:text-white">
 
@@ -183,7 +252,7 @@
         <div class="lg:col-span-5 relative flex justify-center">
           <div class="absolute w-72 h-72 rounded-full bg-forest-light/20 blur-[50px] pointer-events-none" aria-hidden="true"></div>
           <div class="relative w-full max-w-sm rounded-[36px] overflow-hidden border-4 border-white/10 shadow-2xl aspect-square">
-            <img src="Images/photo_association.png" alt="People laughing and applauding during theater community workshop, by Tagada Studio" class="w-full h-full object-cover" />
+            <img src="Images/photo_association.webp" alt="People laughing and applauding during theater community workshop, by Tagada Studio" width="400" height="400" class="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -410,31 +479,31 @@
           <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Nos Expertises</h4>
           <ul class="space-y-2 text-sm text-white/60 list-none">
             <li><a href="scolaire.html" class="hover:text-white transition-colors">Photographie Scolaire</a></li>
+            <li><a href="photo-de-classe.html" class="hover:text-white transition-colors">Photos de Classe</a></li>
             <li><a href="sport.html" class="hover:text-white transition-colors">Photo Club Sport</a></li>
             <li><a href="association.html" class="hover:text-white text-white font-bold transition-colors">Reportage Associatif</a></li>
-            <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
           </ul>
         </nav>
 
         <!-- COLUMN 3: DIRECT LINKS -->
         <nav aria-label="Liens Utiles Footer">
-          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Tagada Studio</h4>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Services & Tarifs</h4>
           <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="commande-photo-scolaire-en-ligne.html" class="hover:text-white transition-colors">Commande en Ligne</a></li>
+            <li><a href="tarif-photographe-scolaire.html" class="hover:text-white transition-colors">Tarifs & Devis Scolaire</a></li>
             <li><a href="index.html#processus" class="hover:text-white transition-colors">Notre Méthode</a></li>
-            <li><a href="index.html#temoignages" class="hover:text-white transition-colors">Témoignages</a></li>
             <li><a href="index.html#faq" class="hover:text-white transition-colors">Questions Fréquentes</a></li>
-            <li><a href="index.html#contact" class="hover:text-white transition-colors">Devis Gratuit</a></li>
           </ul>
         </nav>
 
         <!-- COLUMN 4: REGULATORY -->
         <nav aria-label="Légal Navigation Footer">
-          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Législation & SEO</h4>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Légal & Localisation</h4>
           <ul class="space-y-2 text-sm text-white/60 list-none">
-            <li><a href="mentions-legales.html" class="hover:text-white transition-colors">Mentions Légales</a></li>
-            <li><a href="politique-confidentialite.html" class="hover:text-white transition-colors">Politique de Confidentialité</a></li>
-            <li><a href="cgv.html" class="hover:text-white transition-colors">CGV</a></li>
-            <li><a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap XML</a></li>
+            <li><a href="photographe-scolaire-ile-de-france.html" class="hover:text-white transition-colors">Scolaire Île-de-France</a></li>
+            <li><a href="photographe-scolaire-paris.html" class="hover:text-white transition-colors">Scolaire Paris</a></li>
+            <li><a href="photographe-scolaire-seine-saint-denis.html" class="hover:text-white transition-colors">Scolaire Seine-Saint-Denis</a></li>
+            <li><a href="mentions-legales.html" class="hover:text-white transition-colors">Mentions Légales & RGPD</a></li>
           </ul>
         </nav>
 
@@ -442,9 +511,9 @@
 
       <!-- COPYRIGHT -->
       <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
-        <p>© 2026 Tagada Studio. Tous droits réservés. SIRET : 984 595 538 00013 · Neuilly-sur-Marne (93330).</p>
+        <p>© 2026 Tagada Studio. Tous droits réservés. EURL au capital de 1 000 € · SIRET : 984 595 538 00013 · Neuilly-sur-Marne (93330).</p>
         <p class="text-center md:text-right">
-          Ciblage Local : <a href="scolaire.html" class="hover:text-white/70 underline transition-colors">Photographie scolaire Neuilly-sur-Marne</a> · <a href="sport.html" class="hover:text-white/70 underline transition-colors">Photo club sport</a> · <a href="association.html" class="hover:text-white/70 underline transition-colors">Reportage associatif Île-de-France</a>
+          Ciblage Local : <a href="photographe-scolaire-seine-saint-denis.html" class="hover:text-white/70 underline transition-colors">Photographe scolaire Neuilly-sur-Marne (93)</a> · <a href="sport.html" class="hover:text-white/70 underline transition-colors">Photo club sport</a> · <a href="association.html" class="hover:text-white/70 underline transition-colors">Reportage associatif Île-de-France</a>
         </p>
       </div>
 

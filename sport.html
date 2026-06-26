@@ -15,8 +15,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary SEO Meta Tags -->
-  <title>Photo Club Sport | Tagada Studio (93) Île-de-France</title>
-  <meta name="description" content="Spécialiste de la photo de club de sport à Neuilly-sur-Marne et en Île-de-France. Photos d'équipe, portraits de licenciés et reportage action. Partenariat de financement club." />
+  <title>Photographe Club Sportif en Seine-Saint-Denis & Île-de-France | Tagada Studio</title>
+  <meta name="description" content="Spécialiste de la photo de club de sport à Neuilly-sur-Marne (93) et en Île-de-France. Photos d'équipe, portraits de licenciés et reportage action. Partenariat financier club." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Tagada Studio" />
   <link rel="canonical" href="https://tagadastudio.fr/sport.html" />
@@ -24,13 +24,15 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tagadastudio.fr/sport.html" />
-  <meta property="og:title" content="Photo Club Sport | Tagada Studio Île-de-France" />
+  <meta property="og:title" content="Photographe Club Sportif en Seine-Saint-Denis & IDF | Tagada Studio" />
   <meta property="og:description" content="Sublimez l'esprit de vos équipes avec nos photos de club sportives. Session photo pro et reversement de commission de vente pour financer vos projets." />
-  <meta property="og:image" content="https://tagadastudio.fr/Images/photo_sport.png" />
+  <meta property="og:image" content="https://tagadastudio.fr/Images/photo_sport.webp" />
 
   <!-- Google Fonts & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -100,6 +102,73 @@
       border-color: rgba(26, 77, 46, 0.6) !important;
     }
   </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://tagadastudio.fr/sport.html#webpage",
+        "url": "https://tagadastudio.fr/sport.html",
+        "name": "Photographe Club Sportif | Tagada Studio",
+        "description": "Portraits de licenciés, photos d'équipes et composites personnalisées pour clubs de sport en Seine-Saint-Denis et Île-de-France. Système de reversement solidaire.",
+        "breadcrumb": {
+          "@id": "https://tagadastudio.fr/sport.html#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://tagadastudio.fr/sport.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://tagadastudio.fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Clubs Sportifs",
+            "item": "https://tagadastudio.fr/sport.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://tagadastudio.fr/sport.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Combien de temps faut-il pour organiser le shooting de tout un club ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nous calons le planning de passage en collaboration étroite avec votre secrétariat. Nous organisons généralement les séances sur un week-end complet ou en semaine lors des créneaux d'entraînement par tranche de 15 minutes par équipe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel est le montant de la commission reversée au club ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le taux de commission standard se situe généralement entre 15% et 20% du montant total des ventes HT réalisées sur votre galerie de club. Cette commission fait l'objet d'une convention signée au préalable, en toute clarté."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Proposez-vous des affiches de sponsoring et calendriers ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, tout à fait ! Nous pouvons concevoir des calendriers officiels de club avec les photos d'équipe et les encarts publicitaires de vos sponsors locaux. Nous gérons également l'impression en haute qualité."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script></style>
 </head>
 <body class="bg-stone text-ink antialiased selection:bg-forest selection:text-white">
 
@@ -183,7 +252,7 @@
         <div class="lg:col-span-5 relative flex justify-center">
           <div class="absolute w-72 h-72 rounded-full bg-forest-light/20 blur-[50px] pointer-events-none" aria-hidden="true"></div>
           <div class="relative w-full max-w-sm rounded-[36px] overflow-hidden border-4 border-white/10 shadow-2xl aspect-square">
-            <img src="Images/photo_sport.png" alt="Youth soccer team celebrating in forest green jersey, by Tagada Studio" class="w-full h-full object-cover" />
+            <img src="Images/photo_sport.webp" alt="Youth soccer team celebrating in forest green jersey, by Tagada Studio" width="400" height="400" class="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -406,31 +475,31 @@
           <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Nos Expertises</h4>
           <ul class="space-y-2 text-sm text-white/60 list-none">
             <li><a href="scolaire.html" class="hover:text-white transition-colors">Photographie Scolaire</a></li>
+            <li><a href="photo-de-classe.html" class="hover:text-white transition-colors">Photos de Classe</a></li>
             <li><a href="sport.html" class="hover:text-white text-white font-bold transition-colors">Photo Club Sport</a></li>
             <li><a href="association.html" class="hover:text-white transition-colors">Reportage Associatif</a></li>
-            <li><a href="index.html#contact" class="hover:text-white transition-colors">Contact & Devis</a></li>
           </ul>
         </nav>
 
         <!-- COLUMN 3: DIRECT LINKS -->
         <nav aria-label="Liens Utiles Footer">
-          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Tagada Studio</h4>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Services & Tarifs</h4>
           <ul class="space-y-2 text-sm text-white/60 list-none">
+            <li><a href="commande-photo-scolaire-en-ligne.html" class="hover:text-white transition-colors">Commande en Ligne</a></li>
+            <li><a href="tarif-photographe-scolaire.html" class="hover:text-white transition-colors">Tarifs & Devis Scolaire</a></li>
             <li><a href="index.html#processus" class="hover:text-white transition-colors">Notre Méthode</a></li>
-            <li><a href="index.html#temoignages" class="hover:text-white transition-colors">Témoignages</a></li>
             <li><a href="index.html#faq" class="hover:text-white transition-colors">Questions Fréquentes</a></li>
-            <li><a href="index.html#contact" class="hover:text-white transition-colors">Devis Gratuit</a></li>
           </ul>
         </nav>
 
         <!-- COLUMN 4: REGULATORY -->
         <nav aria-label="Légal Navigation Footer">
-          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Législation & SEO</h4>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-white/55 mb-4">Légal & Localisation</h4>
           <ul class="space-y-2 text-sm text-white/60 list-none">
-            <li><a href="mentions-legales.html" class="hover:text-white transition-colors">Mentions Légales</a></li>
-            <li><a href="politique-confidentialite.html" class="hover:text-white transition-colors">Politique de Confidentialité</a></li>
-            <li><a href="cgv.html" class="hover:text-white transition-colors">CGV</a></li>
-            <li><a href="sitemap.xml" class="hover:text-white transition-colors">Sitemap XML</a></li>
+            <li><a href="photographe-scolaire-ile-de-france.html" class="hover:text-white transition-colors">Scolaire Île-de-France</a></li>
+            <li><a href="photographe-scolaire-paris.html" class="hover:text-white transition-colors">Scolaire Paris</a></li>
+            <li><a href="photographe-scolaire-seine-saint-denis.html" class="hover:text-white transition-colors">Scolaire Seine-Saint-Denis</a></li>
+            <li><a href="mentions-legales.html" class="hover:text-white transition-colors">Mentions Légales & RGPD</a></li>
           </ul>
         </nav>
 
@@ -438,9 +507,9 @@
 
       <!-- COPYRIGHT -->
       <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
-        <p>© 2026 Tagada Studio. Tous droits réservés. SIRET : 984 595 538 00013 · Neuilly-sur-Marne (93330).</p>
+        <p>© 2026 Tagada Studio. Tous droits réservés. EURL au capital de 1 000 € · SIRET : 984 595 538 00013 · Neuilly-sur-Marne (93330).</p>
         <p class="text-center md:text-right">
-          Ciblage Local : <a href="scolaire.html" class="hover:text-white/70 underline transition-colors">Photographie scolaire Neuilly-sur-Marne</a> · <a href="sport.html" class="hover:text-white/70 underline transition-colors">Photo club sport</a> · <a href="association.html" class="hover:text-white/70 underline transition-colors">Reportage associatif Île-de-France</a>
+          Ciblage Local : <a href="photographe-scolaire-seine-saint-denis.html" class="hover:text-white/70 underline transition-colors">Photographe scolaire Neuilly-sur-Marne (93)</a> · <a href="sport.html" class="hover:text-white/70 underline transition-colors">Photo club sport</a> · <a href="association.html" class="hover:text-white/70 underline transition-colors">Reportage associatif Île-de-France</a>
         </p>
       </div>
 
