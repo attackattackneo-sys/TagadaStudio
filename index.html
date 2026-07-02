@@ -796,7 +796,7 @@
                   </div>
                   <div>
                     <label for="contact-phone" class="block text-xs font-bold text-ink uppercase tracking-wider mb-2">Téléphone *</label>
-                    <input type="tel" id="contact-phone" name="lead_form[phone]" required autocomplete="tel" class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/10 transition-all bg-white" placeholder="07 81 75 77 54" />
+                    <input type="tel" id="contact-phone" name="lead_form[phone]" required autocomplete="tel" pattern="^(?:0|\+33|0033)\s*[1-9](?:[ .-]?\d{2}){4}$" title="Veuillez entrer un numéro de téléphone valide (ex: 06 12 34 56 78)" class="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/10 transition-all bg-white" placeholder="07 81 75 77 54" />
                   </div>
                 </div>
               </div>
@@ -839,7 +839,7 @@
                   <div class="grid grid-cols-3 gap-3">
                     <div class="col-span-1">
                       <label for="contact-zipcode" class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-1">Code postal</label>
-                      <input type="text" id="contact-zipcode" name="lead_form[address][zipcode]" required class="w-full px-3 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/10 transition-all bg-white" placeholder="93330" />
+                      <input type="text" id="contact-zipcode" name="lead_form[address][zipcode]" required pattern="[0-9]{5}" title="Le code postal doit comporter 5 chiffres (ex: 93330)" class="w-full px-3 py-2.5 rounded-lg border border-gray-200 text-sm focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/10 transition-all bg-white" placeholder="93330" />
                     </div>
                     <div class="col-span-2">
                       <label for="contact-city" class="block text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-1">Ville</label>
@@ -1175,10 +1175,62 @@
           console.warn('Spam detected (too fast).');
           return;
         }
+
+        // Additional validation: Zipcode (must be exactly 5 digits)
+        const zipcodeVal = (document.getElementById('contact-zipcode')?.value || '').trim();
+        if (!/^[0-9]{5}$/.test(zipcodeVal)) {
+          e.preventDefault();
+          alert('Veuillez entrer un code postal valide à 5 chiffres (ex: 93330).');
+          return;
+        }
+
+        // Additional validation: Phone (must match French phone format)
+        const phoneVal = (document.getElementById('contact-phone')?.value || '').trim();
+        const phoneRegex = /^(?:0|\+33|0033)\s*[1-9](?:[ .-]?\d{2}){4}$/;
+        if (!phoneRegex.test(phoneVal)) {
+          e.preventDefault();
+          alert('Veuillez entrer un numéro de téléphone valide (ex: 06 12 34 56 78).');
+          return;
+        }
+
+        // Additional validation: Detect gibberish input typical of automated bot submissions
+        const textFields = [
+          'contact-firstname',
+          'contact-lastname',
+          'contact-structure-name',
+          'contact-role',
+          'contact-structure-type',
+          'contact-size',
+          'contact-start-date'
+        ];
+        
+        const isGibberish = (val) => {
+          val = val.trim();
+          // If it's a single word of length > 12 with only letters and containing mixed cases in the middle
+          if (val.length > 12 && /^[a-zA-Z]+$/.test(val)) {
+            const upperCount = (val.match(/[A-Z]/g) || []).length;
+            const lowerCount = (val.match(/[a-z]/g) || []).length;
+            if (upperCount > 1 && lowerCount > 1) {
+              return true;
+            }
+          }
+          return false;
+        };
+
+        for (const id of textFields) {
+          const el = document.getElementById(id);
+          if (el && isGibberish(el.value)) {
+            e.preventDefault();
+            console.warn('Spam detected via gibberish check on field: ' + id);
+            return;
+          }
+        }
         
         // Set the action URL dynamically to prevent simple scraper bots from finding the endpoint in raw HTML
-        // Base64 decodes to: https://www.fotostudio.io/f/28346edbb9dafb15685cc1bf99067ce6
-        contactForm.action = atob("aHR0cHM6Ly93d3cuZm90b3N0dWRpby5pby9mLzI4MzQ2ZWRiYjlkYWZiMTU2ODVjYzFiZjk5MDY3Y2U2");
+        // String is reversed before base64 encoding to avoid basic automatic base64 scraper decoders.
+        // Base64 decodes to: 6ec706099fb1cc58651bfad99bde64382/f/oi.oidutsofot.www//:sptth
+        // Reversing it yields: https://www.fotostudio.io/f/28346edbb9dafb15685cc1bf99067ce6
+        contactForm.action = atob("NmVjNzYwOTlmYjFjYzU4NjUxYmZhZDliYmRlNjQzODIvZi9vaS5vaWR1dHNvdG9mLnd3dy8vOnNwdHRo").split("").reverse().join("");
       });
     }
   </script>
